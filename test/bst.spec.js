@@ -70,7 +70,7 @@ describe('BinarySearchTree', () => {
   })
 
   describe('`size` method', () => {
-    it('reports the current size of the tree', () => {
+    xit('reports the current size of the tree', () => {
       expect(tree.size()).to.equal(1)
       tree.insert(12)
       expect(tree.size()).to.equal(2)
@@ -80,7 +80,7 @@ describe('BinarySearchTree', () => {
   })
 
   describe('`contains` method', () => {
-    it('returns true if passed a value that exists in the tree', () => {
+    xit('returns true if passed a value that exists in the tree', () => {
       valuesToInsert.forEach((value) => {
         tree.insert(value)
       })
@@ -89,7 +89,7 @@ describe('BinarySearchTree', () => {
       })
     })
 
-    it('returns false if passed a value that exists in the tree', () => {
+    xit('returns false if passed a value that exists in the tree', () => {
       valuesToInsert.forEach((value) => {
         tree.insert(value)
       })
@@ -118,7 +118,7 @@ describe('BinarySearchTree', () => {
 
     // ### Depth-First Search: "In-Order" traversal
     // The one obvious advantage of "in-order" traversal is that values are processed respecting their comparative order
-    it('runs a depth-first "in-order" traversal when run with no option or "in-order" option', () => {
+    xit('runs a depth-first "in-order" traversal when run with no option or "in-order" option', () => {
       valuesToInsert.forEach((value) => {
         tree.insert(value)
       })
@@ -136,7 +136,7 @@ describe('BinarySearchTree', () => {
 
     // ### Depth-First Search: "Pre-Order" traversal
     // One use case for this kind of traversal would be copying a tree (processes roots first).
-    it('runs a depth-first "pre-order" traversal when run with "pre-order" option', () => {
+    xit('runs a depth-first "pre-order" traversal when run with "pre-order" option', () => {
       valuesToInsert.forEach((value) => {
         tree.insert(value)
       })
@@ -148,7 +148,7 @@ describe('BinarySearchTree', () => {
 
     // ### Depth-First Search: "Post-Order" traversal
     // One use case would be deleting a tree. Because this kind of traversal processes the leaves first, it would allow us to delete or free the memory used by the leaves before deleting the parent. If we deleted the parent first, we would be unable to "get to" the leaves and delete them! This is called a "memory leak".
-    it('runs a depth-first "post-order" traversal when run with "post-order" option', () => {
+    xit('runs a depth-first "post-order" traversal when run with "post-order" option', () => {
       valuesToInsert.forEach((value) => {
         tree.insert(value)
       })
@@ -165,7 +165,7 @@ describe('BinarySearchTree', () => {
 
     // ### Breadth-First Search
     // BFS is helpful when tree levels have meaning (Ex. an organization chart, family tree, or even the DOM tree)
-    it('runs a breadth-first traversal', () => {
+    xit('runs a breadth-first traversal', () => {
       valuesToInsert.forEach((value) => {
         tree.insert(value)
       })
